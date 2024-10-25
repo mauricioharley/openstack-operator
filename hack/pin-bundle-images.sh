@@ -40,6 +40,9 @@ for MOD_PATH in ${MOD_PATHS}; do
     fi
 
     GITHUB_USER=$(echo $MOD_PATH | sed -e 's|github.com/\(.*\)/.*-operator/.*$|\1|')
+    if [ "$GITHUB_USER" == "mauricioharley" ]; then
+        GITHUB_USER=rh_ee_mharley
+    fi
     CURL_REGISTRY="quay.io"
     REPO_CURL_URL="https://${CURL_REGISTRY}/api/v1/repository/openstack-k8s-operators"
     REPO_URL="${CURL_REGISTRY}/openstack-k8s-operators"

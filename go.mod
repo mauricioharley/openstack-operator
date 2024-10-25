@@ -32,7 +32,7 @@ require (
 	github.com/openstack-k8s-operators/nova-operator/api v0.4.1-0.20241017115306-c3ef3bef3be5
 	github.com/openstack-k8s-operators/octavia-operator/api v0.4.1-0.20241017154659-930f3479c2e4
 	github.com/openstack-k8s-operators/openstack-baremetal-operator/api v0.4.1-0.20241016131858-2bace32a527a
-	github.com/openstack-k8s-operators/openstack-operator/apis v0.0.0-20240531084739-3b4c0451297c
+	github.com/openstack-k8s-operators/openstack-operator/apis v0.5.0
 	github.com/openstack-k8s-operators/ovn-operator/api v0.4.1-0.20241018052304-b2f1022e67a0
 	github.com/openstack-k8s-operators/placement-operator/api v0.4.1-0.20241016073632-718abf1faec1
 	github.com/openstack-k8s-operators/swift-operator/api v0.4.1-0.20241016113221-7b5e6572638c
@@ -126,3 +126,5 @@ replace github.com/openshift/api => github.com/openshift/api v0.0.0-202408300231
 
 // custom RabbitmqClusterSpecCore for OpenStackControlplane (v2.9.0_patches_tag)
 replace github.com/rabbitmq/cluster-operator/v2 => github.com/openstack-k8s-operators/rabbitmq-cluster-operator/v2 v2.6.1-0.20241017142550-a3524acedd49 //allow-merging
+
+replace github.com/openstack-k8s-operators/barbican-operator/api => github.com/mauricioharley/barbican-operator/api v0.0.0-20241024231804-ce15cd39af42
